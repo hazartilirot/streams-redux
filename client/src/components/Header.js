@@ -1,5 +1,5 @@
-import React from 'react';
-import {Link} from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 import GoogleAuth from "./GoogleAuth";
 
 const Header = () => {
@@ -12,9 +12,9 @@ const Header = () => {
         <Link to="/" className="item">
           All Streams
         </Link>
-        <GoogleAuth/>
+        <GoogleAuth />
       </div>
     </div>
   );
-}
+};
 export default Header;
