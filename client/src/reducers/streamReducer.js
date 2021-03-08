@@ -22,9 +22,9 @@ export default (state = {}, action) => {
    case DELETE_STREAM: /*MIND the id is payload itself*/
      //return _.omit(state, action.payload);
      return Object.fromEntries(Object.entries(state)
-       .filter(i => i[1] !== action.payload)
+       .filter(i => i[0] !== action.payload)
      )
    default: 
      return state
  }
-} 
+}
