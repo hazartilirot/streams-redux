@@ -1,0 +1,36 @@
+{
+  "streams": [
+    {
+      "title": "My Stream",
+      "description": "This is a great stream",
+      "id": 1
+    },
+    {
+      "title": "Other stream",
+      "description": "Here's some stream",
+      "id": 2
+    },
+    {
+      "title": "I created this stream",
+      "description": "This stream is about refactoring",
+      "id": 3
+    },
+    {
+      "title": "I created this stream",
+      "description": "aaaaaaaa bbbbbb",
+      "id": 4
+    },
+    {
+      "title": "Programmatic Navigation",
+      "description": "askdjfasdf aoiuaoi asdfadsf",
+      "userId": "103452480232518231144",
+      "id": 5
+    },
+    {
+      "title": "I'm streaming component reuse",
+      "description": "watch me refactor some components",
+      "userId": "103452480232518231144",
+      "id": 6
+    }
+  ]
+}
