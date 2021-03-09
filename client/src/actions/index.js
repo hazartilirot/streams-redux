@@ -26,14 +26,14 @@ dispatch functions is expected to be returned. Remember action creator might
 have two parameters, getState is optional though if some properties of state
 is needed it should therefore specified*/
 export const createStream = (formValues) => async (dispatch, getState) => {
-  const {userId} = getState().auth;
-  const response = await streams.post("/streams", {...formValues, userId});
+  const { userId } = getState().auth;
+  const response = await streams.post("/streams", { ...formValues, userId });
 
   dispatch({
     type: CREATE_STREAM,
     payload: response.data,
   });
-  history.push('/')
+  history.push("/");
 };
 export const fetchStreams = () => async (dispatch) => {
   const response = await streams.get("/streams");
@@ -62,7 +62,7 @@ export const editStream = (id, formValues) => async (dispatch) => {
     type: EDIT_STREAM,
     payload: response.data,
   });
-  history.push('/')
+  history.push("/");
 };
 export const deleteStream = (id) => async (dispatch) => {
   await streams.delete(`/streams/${id}`);
@@ -71,6 +71,6 @@ export const deleteStream = (id) => async (dispatch) => {
     type: DELETE_STREAM,
     payload: id,
   });
-  
-  history.push('/')
+
+  history.push("/");
 };

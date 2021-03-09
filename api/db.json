@@ -1,3 +1,10 @@
 {
-  "streams": []
+  "streams": [
+    {
+      "title": "React fundamentals",
+      "description": "Join our stream if you're a React's learner",
+      "userId": "103452480232518231144",
+      "id": 1
+    }
+  ]
 }

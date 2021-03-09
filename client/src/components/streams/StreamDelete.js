@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import Modal from "../Modal";
 import history from "../../history";
 import { deleteStream, fetchStream } from "../../actions";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 /*MIND the syntax! A shorthand of <React.Fragment> is just empty tag <></>
 Both tags might be used interchangeably*/
@@ -22,10 +22,12 @@ class StreamDelete extends React.Component {
         >
           Delete
         </button>
-        <Link to="/" className="ui button">Cancel</Link>
+        <Link to="/" className="ui button">
+          Cancel
+        </Link>
       </React.Fragment>
     );
-  }
+  };
 
   render() {
     if (!this.props.stream) return <div></div>;
