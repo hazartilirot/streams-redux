@@ -40,6 +40,11 @@ Overall there is going to be three processes.
 ```
 npm start
 ```
+The last step is to create an OAuth 2.0 Client ID in Google so that a user could
+log in using its credentials.
+https://console.developers.google.com/apis/credentials
+Once it's set create .env file in a main directory assigning Client ID to
+`REACT_APP_OAUTH2_CLIENT_ID` variable.
 
 ### Usage
 Having run all processes create a new stream, copy its id and run OBS studio. 
